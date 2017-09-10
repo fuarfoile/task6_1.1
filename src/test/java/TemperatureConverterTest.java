@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 public class TemperatureConverterTest {
 
     TemperatureConverter testobj;
-    double delta = 0.01;
+    double delta = 0.1;
 
     @Before
     public void initialize() {
@@ -32,7 +32,7 @@ public class TemperatureConverterTest {
         assertEquals(42.04, testobj.convertFtoK(-384), delta);
     }
     @Test
-    public void testconvertKtoF(){
+    public void testConvertKtoF(){
         assertEquals(-328.27, testobj.convertKtoF(73), delta);
     }
 }
